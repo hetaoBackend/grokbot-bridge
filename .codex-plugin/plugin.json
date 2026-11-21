@@ -1,0 +1,37 @@
+{
+  "name": "grokbot-bridge",
+  "version": "0.1.0",
+  "description": "Talk to your Grok Bot Bots from Claude Code, Codex or any MCP client without bringing Grok Bot to the front: read chats from the app's local cache, send tasks through official routine webhooks.",
+  "author": {
+    "name": "hetaoBackend",
+    "url": "https://github.com/hetaoBackend"
+  },
+  "homepage": "https://github.com/hetaoBackend/grokbot-bridge",
+  "repository": "https://github.com/hetaoBackend/grokbot-bridge",
+  "license": "MIT",
+  "keywords": [
+    "grok",
+    "grok-bot",
+    "mcp",
+    "agents",
+    "macos",
+    "webhook"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.codex-mcp.json",
+  "interface": {
+    "displayName": "Grok Bot Bridge",
+    "shortDescription": "Ask your Grok Bot Bots for work without switching windows",
+    "longDescription": "Lists your Grok Bot Bots, reads their chats from the desktop app's local cache, and sends them tasks through each Bot's routine webhook, then waits for the tagged reply. Grok Bot is never opened or focused. macOS only.",
+    "developerName": "hetaoBackend",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/hetaoBackend/grokbot-bridge",
+    "defaultPrompt": [
+      "List my Grok Bot Bots and tell me which ones are waiting on me"
+    ]
+  }
+}

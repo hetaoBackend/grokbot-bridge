@@ -1,0 +1,21 @@
+{
+  "name": "grokbot-bridge",
+  "description": "grokbot-bridge: Grok Bot for coding agents, in the background.",
+  "owner": {
+    "name": "hetaoBackend",
+    "url": "https://github.com/hetaoBackend"
+  },
+  "plugins": [
+    {
+      "name": "grokbot-bridge",
+      "source": "./",
+      "description": "Talk to your Grok Bot Bots from Claude Code, Codex or any MCP client without bringing Grok Bot to the front: read chats from the app's local cache, send tasks through official routine webhooks.",
+      "homepage": "https://github.com/hetaoBackend/grokbot-bridge",
+      "repository": "https://github.com/hetaoBackend/grokbot-bridge",
+      "license": "MIT"
+    }
+  ],
+  "metadata": {
+    "description": "grokbot-bridge: Grok Bot for coding agents, in the background."
+  }
+}

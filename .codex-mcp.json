@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "grokbot-bridge": {
+      "command": "node",
+      "args": [
+        "./src/cli.js",
+        "serve"
+      ],
+      "cwd": "."
+    }
+  }
+}

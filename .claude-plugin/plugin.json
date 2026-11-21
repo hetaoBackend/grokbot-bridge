@@ -1,0 +1,29 @@
+{
+  "name": "grokbot-bridge",
+  "version": "0.1.0",
+  "description": "Talk to your Grok Bot Bots from Claude Code, Codex or any MCP client without bringing Grok Bot to the front: read chats from the app's local cache, send tasks through official routine webhooks.",
+  "author": {
+    "name": "hetaoBackend",
+    "url": "https://github.com/hetaoBackend"
+  },
+  "homepage": "https://github.com/hetaoBackend/grokbot-bridge",
+  "repository": "https://github.com/hetaoBackend/grokbot-bridge",
+  "license": "MIT",
+  "keywords": [
+    "grok",
+    "grok-bot",
+    "mcp",
+    "agents",
+    "macos",
+    "webhook"
+  ],
+  "mcpServers": {
+    "grokbot-bridge": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/src/cli.js",
+        "serve"
+      ]
+    }
+  }
+}

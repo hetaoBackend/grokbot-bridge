@@ -12,7 +12,8 @@
     ".codex-plugin",
     ".codex-mcp.json",
     ".agents",
-    "skills"
+    "skills",
+    "assets"
   ],
   "scripts": {
     "start": "node src/cli.js serve",

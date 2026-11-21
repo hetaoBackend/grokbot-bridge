@@ -32,6 +32,8 @@
     "websiteURL": "https://github.com/hetaoBackend/grokbot-bridge",
     "defaultPrompt": [
       "List my Grok Bot Bots and tell me which ones are waiting on me"
-    ]
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
   }
 }

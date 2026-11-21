@@ -1,5 +1,7 @@
 # grokbot-bridge
 
+<img src="assets/icon.png" width="64" height="64" alt="grokbot-bridge icon">
+
 Send a task from MiniMax Code to your Grok Bot and receive the matching reply in the same MCP tool call—without bringing the Grok Bot window to the front.
 
 [![Overview of grokbot-bridge: an MCP client uses the bridge to read and ask an existing Grok Bot without UI automation](docs/diagrams/overview.svg)](docs/diagrams/overview.svg)

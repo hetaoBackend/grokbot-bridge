@@ -9,6 +9,7 @@
   "homepage": "https://github.com/hetaoBackend/grokbot-bridge",
   "repository": "https://github.com/hetaoBackend/grokbot-bridge",
   "license": "MIT",
+  "icon": "./assets/icon.png",
   "keywords": [
     "grok",
     "grok-bot",

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1200 780" width="1200" height="780">
+  <title id="title">A real ask and reply flow</title>
+  <desc id="desc">Excalidraw-style diagram for the grokbot-bridge documentation.</desc>
+  <rect width="100%" height="100%" fill="#fffdf8"/>
+  <defs>
+    <filter id="wobble" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency=".009" numOctaves="1" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.3"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 1 1 L 11 6 L 1 11" fill="none" stroke="#2f2f2f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <text x="60" y="62" fill="#2f2f2f" font-size="34" font-weight="750" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">What happens when an MCP client calls ask</text>
+  <text x="60" y="102" fill="#66615b" font-size="20" font-weight="500" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">The return path is the desktop cache, so the app must be running and syncing.</text>
+  <rect x="45" y="140" width="210" height="44" rx="22" fill="#f0ebf8" stroke="#7c68a8" stroke-width="3" filter="url(#wobble)"/>
+  <rect x="47" y="139" width="208" height="45" rx="22" fill="none" stroke="#7c68a8" stroke-width="1.2" opacity=".28"/>
+  <text x="150" y="169" fill="#7c68a8" font-size="18" font-weight="650" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">MCP client</text>
+  <path d="M 150 195 L 150 680" fill="none" stroke="#7c68a8" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <rect x="360" y="140" width="210" height="44" rx="22" fill="#fff7ed" stroke="#f59e0b" stroke-width="3" filter="url(#wobble)"/>
+  <rect x="362" y="139" width="208" height="45" rx="22" fill="none" stroke="#f59e0b" stroke-width="1.2" opacity=".28"/>
+  <text x="465" y="169" fill="#f59e0b" font-size="18" font-weight="650" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">bridge</text>
+  <path d="M 465 195 L 465 680" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <rect x="660" y="140" width="210" height="44" rx="22" fill="#e7f5eb" stroke="#4d9b69" stroke-width="3" filter="url(#wobble)"/>
+  <rect x="662" y="139" width="208" height="45" rx="22" fill="none" stroke="#4d9b69" stroke-width="1.2" opacity=".28"/>
+  <text x="765" y="169" fill="#4d9b69" font-size="18" font-weight="650" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">Routine + Bot</text>
+  <path d="M 765 195 L 765 680" fill="none" stroke="#4d9b69" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <rect x="945" y="140" width="210" height="44" rx="22" fill="#ffffff" stroke="#2f2f2f" stroke-width="3" filter="url(#wobble)"/>
+  <rect x="947" y="139" width="208" height="45" rx="22" fill="none" stroke="#2f2f2f" stroke-width="1.2" opacity=".28"/>
+  <text x="1050" y="169" fill="#2f2f2f" font-size="18" font-weight="650" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">local cache</text>
+  <path d="M 1050 195 L 1050 680" fill="none" stroke="#2f2f2f" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <path d="M 165 235 L 445 235" fill="none" stroke="#7c68a8" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="305" y="216" fill="#7c68a8" font-size="18" font-weight="700" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">1 · ask(bot, message)</text>
+  <path d="M 485 315 L 745 315" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="615" y="275" fill="#f59e0b" font-size="18" font-weight="750" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">2 · HTTPS POST</text>
+  <text x="615" y="299" fill="#66615b" font-size="16" font-weight="500" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">request_id · reply_tag · message</text>
+  <path d="M 785 390 L 1030 390" fill="none" stroke="#4d9b69" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="907" y="366" fill="#4d9b69" font-size="18" font-weight="750" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">3 · reply syncs</text>
+  <path d="M 1030 470 L 485 470" fill="none" stroke="#4d9b69" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)" stroke-dasharray="10 9"/>
+  <text x="757" y="446" fill="#4d9b69" font-size="18" font-weight="700" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">4 · poll transcripts; find matching tag</text>
+  <path d="M 445 555 L 165 555" fill="none" stroke="#f59e0b" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="305" y="530" fill="#f59e0b" font-size="18" font-weight="700" text-anchor="middle" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">5 · done / partial / pending / sent</text>
+  <rect x="75" y="620" width="1050" height="105" rx="18" fill="#ffffff" stroke="#2f2f2f" stroke-width="3" filter="url(#wobble)"/>
+  <rect x="77" y="619" width="1048" height="106" rx="18" fill="none" stroke="#2f2f2f" stroke-width="1.2" opacity=".28"/>
+  <text x="105" y="660" fill="#f59e0b" font-size="20" font-weight="750" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">Important</text>
+  <text x="225" y="660" fill="#2f2f2f" font-size="19" font-weight="600" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">The reply tag matches a response; it does not authenticate one.</text>
+  <text x="105" y="696" fill="#7c68a8" font-size="20" font-weight="750" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">Safety</text>
+  <text x="225" y="696" fill="#2f2f2f" font-size="18" font-weight="600" text-anchor="start" font-family="ui-rounded, &quot;SF Pro Rounded&quot;, &quot;Segoe UI&quot;, sans-serif">Routine + agent instructions request confirmation for side effects; runtime does not enforce it.</text>
+</svg>
